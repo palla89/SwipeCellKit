@@ -383,7 +383,7 @@ extension SwipeController: SwipeActionsViewDelegate {
             
             switch expansionStyle.completionAnimation {
             case .bounce:
-                performFillAction(action: action, fillOption: .automatic(.reset, timing: .after))
+                performFillAction(action: action, fillOption: .automatic(.delete, timing: .with))
 
             case .fill(let fillOption):
                 performFillAction(action: action, fillOption: fillOption)
